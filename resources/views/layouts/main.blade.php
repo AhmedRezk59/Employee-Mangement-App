@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>SB Admin 2 - Dashboard</title>
+    
+    <link rel="shortcut icon" href="{{asset('business_people_01.ico')}}" type="image/x-icon">
+    <title>Employee Mangement App</title>
 
     <!-- Custom fonts for this template-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -47,9 +48,9 @@
 
 
             @if (auth()->user()->can('show countries') ||
-                    auth()->user()->can('show states') ||
-                    auth()->user()->can('show cities') ||
-                    auth()->user()->can('show departments'))
+    auth()->user()->can('show states') ||
+    auth()->user()->can('show cities') ||
+    auth()->user()->can('show departments'))
 
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
